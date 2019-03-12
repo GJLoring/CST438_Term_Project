@@ -4,6 +4,8 @@ Project Idea / Summery:   Stuff to See, an app that looks at your location and d
 
 Project Git Hub:  https://github.com/GJLoring/CST438_Term_Project/invitations
 
+Pivitol Tracker: https://www.pivotaltracker.com/projects/2318447
+
 Project Requirments:
     1.  Web Server to server requests from client applications
     2.  Database to Store Records
