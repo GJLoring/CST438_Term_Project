@@ -1,0 +1,12 @@
+%h1 Hello #{@name}
+
+%form
+  %p Enter your name
+  %input{:type => "text", :name => :visitor_name}
+  %input{:type => "submit", :name => :"Sign in"}
+  
+%p Previous visitors
+
+%ul
+  -@entries.each do | entry |
+    %li = entry.name
