@@ -1,21 +1,11 @@
 Rails.application.routes.draw do
-  resources :entries
-  resources :bubbles
+  root :to => 'post#index'
+  get 'post/index'
+  get 'post/store'
+  get 'post/login'
+  get 'post/create'
+  get 'post/find'
+  get 'post/index'
+  get 'post/store'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
-  get 'entries/sign_in' => 'entries#sign_in'
-  post 'entries/sign_in' => 'entries#sign_in'
-  
-  get 'entries/sign_up' => 'entries#sign_up'  
-  post 'entries/sign_up' => 'entries#sign_up'  
-  
-  get 'entries/recover_password' => 'entries#recover_password'  
-  post 'entries/recover_password' => 'entries#recover_password' 
-  
-  get 'entries/add_sight' => 'entries#add_sight'  
-  post 'entries/add_sight' => 'entries#add_sight' 
-
-  get 'entries/find_sight' => 'entries#find_sight'  
-  post 'entries/find_sight' => 'entries#find_sight' 
-
 end

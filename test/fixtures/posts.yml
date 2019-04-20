@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  link: 
+  caption: MyText
+  lat: MyText
+  long: MyText
+  user: MyText
+  pass: MyText
+
+two:
+  link: 
+  caption: MyText
+  lat: MyText
+  long: MyText
+  user: MyText
+  pass: MyText

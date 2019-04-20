@@ -10,26 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190414205535) do
+ActiveRecord::Schema.define(version: 2019_04_20_224010) do
 
-  create_table "entries", force: :cascade do |t|
-    t.string   "name"
-    t.string   "password"
-    t.string   "email"
+  create_table "posts", force: :cascade do |t|
+    t.text "link"
+    t.text "caption"
+    t.text "lat"
+    t.text "long"
+    t.text "user"
+    t.text "pass"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "sights", force: :cascade do |t|
-    t.string   "name"
-    t.string   "imageURL"
-    t.string   "lat"
-    t.string   "long"
-    t.string   "description"
-    t.integer  "voteUp"
-    t.integer  "voteDown"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
   end
 
 end
