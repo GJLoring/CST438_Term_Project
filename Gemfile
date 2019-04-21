@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
-  gem 'byebug', platform: :mri
+  #gem 'byebug', platform: :mri
 end
 
 group :production do
