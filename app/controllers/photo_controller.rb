@@ -1,9 +1,11 @@
 class PhotoController < ApplicationController
   def store
-    render plain: params[:caption].inspect
+      @value = Cloudinary::Uploader.upload(params[:image])
+      @post = Post.new({:link => @value['secure_url'], :lat => params[:Lat], :lon => params[:Lon]})
+      @post.save
   end
 
   def index
-    @posts = Post.all
+    @posts = Post.all.
   end
 end
