@@ -5,11 +5,11 @@ one:
   password_digest: MyString
   auth_token: MyString
   password_reset_token: MyString
-  password_reset_sent_at: 2019-04-20 23:58:20
+  password_reset_sent_at: 2019-04-21 00:10:10
 
 two:
   email: MyString
   password_digest: MyString
   auth_token: MyString
   password_reset_token: MyString
-  password_reset_sent_at: 2019-04-20 23:58:20
+  password_reset_sent_at: 2019-04-21 00:10:10

@@ -7,11 +7,3 @@ one:
   long: MyText
   user: MyText
   pass: MyText
-
-two:
-  link: 
-  caption: MyText
-  lat: MyText
-  long: MyText
-  user: MyText
-  pass: MyText
