@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_04_21_190857) do
+ActiveRecord::Schema.define(version: 2019_04_21_202041) do
 
   create_table "posts", force: :cascade do |t|
     t.text "link"
@@ -18,6 +18,13 @@ ActiveRecord::Schema.define(version: 2019_04_21_190857) do
     t.text "lon"
     t.text "lat"
     t.text "user"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

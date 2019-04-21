@@ -7,6 +7,7 @@
         }
     </style>
     </head>
+    <body onload=“getLocation()”;
     <h1 style="text-align: center">Sights to See</h1>
     <div class="wrapper">
         <form class="uploads" method="POST" action="/photo/store" enctype="multipart/form-data">
@@ -17,10 +18,10 @@
                 <input type="text" name="caption">
                 
                 <label for="caption">Latitude</label>
-                <input id="lat" type="text" name="Lat">
+                <input id="lat" type="text" name="Lat" value='1'>
                 
                 <label for="caption">Longitude</label>
-                <input id="lon" type="text" name="Lon">
+                <input id="lon" type="text" name="Lon" value='2'>
             </div>
             <div style="margin-left: 5px;">
                 <input type="file" name="image">
@@ -29,13 +30,13 @@
                 <input type="submit" value="Upload">
             </div>
         </form>
-        <iframe onload="getLocation()">Geo Locate Photo</iframe>
         <p id="latLon"></p>
-        <p id="mapholder"></p>
-        <script>
+        <p id="map"></p>
+    <script>
             var x = document.getElementById("latLon");
             var latValue = document.getElementById("lat");
             var lonValue = document.getElementById("lon");
+            latValue.value = "XXX"
             function getLocation() {
               if (navigator.geolocation) {
                 x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude
@@ -57,7 +58,7 @@
               var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
               "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_:KEY";
             
-              document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+              document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
             }
         </script>
         <div class="images">
@@ -70,4 +71,5 @@
         </div>
         
     </div>
+    </body>
     
